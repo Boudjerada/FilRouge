@@ -1,0 +1,41 @@
+cat_id;cat_nom;cat_parent_id
+1;Flûte;NULL
+2;Guitare;NULL
+3;Batterie;NULL
+4;Basse;NULL
+5;Saxophone;NULL
+6;Piano;NULL
+7;Sono;NULL
+8;Percution;NULL
+9;Flûte picollo;1
+10;Flûte en ré;1
+11;Flûte traversière;1
+12;Flûte en sol ;1
+13;guitare folk;2
+14;guitare flamenco;2
+15;guitare manouche;2
+16;guitare à résonateur;2
+17;Guitare électro-acoustique;2
+18;Batterie à tambour;3
+19;Batterie électrique;3
+20;Basse à 4 cordes;4
+21;Basse à 6 cordes;4
+22;Contrebasse;4
+23;Saxophone contrebasse;5
+24;Saxophone basse;5
+25;Saxophone baryton;5
+26;Saxophone soprano;5
+27;Piano classique;6
+28;Piano pédale;6
+29;Piano droit;6
+30;Amplie;7
+31;Micro;7
+32;Enceinte;7
+33;Caisse claire;8
+34;Castagnettes;8
+35;Célesta;8
+36;Cymbales;8
+37;Cymbales antiques;36
+38;Cymbales frappées;36
+39;Cymbales suspendues;36
+40;Fouet;36

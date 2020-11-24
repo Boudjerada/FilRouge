@@ -1,0 +1,31 @@
+Référence produit;Nom catégorie;Nom catégorie parent
+bass001;Basse à 4 cordes;Basse
+bass002;Contrebasse;Basse
+bass003;Basse à 6 cordes;Basse
+bass004;Basse à 6 cordes;Basse
+batterie001;Batterie à tambour;Batterie
+batterie002;Batterie électrique;Batterie
+batterie003;Batterie électrique;Batterie
+batterie004;Batterie à tambour;Batterie
+flute001;Flûte picollo;Flûte
+flute002;Flûte traversière;Flûte
+flute003;Flûte en ré;Flûte
+flute004;Flûte en sol ;Flûte
+guitare001;guitare flamenco;Guitare
+guitare002;guitare à résonateur;Guitare
+guitare003;guitare manouche;Guitare
+guitare004;Guitare électro-acoustique;Guitare
+percussion001;Cymbales suspendues;Cymbales
+percussion002;Célesta;Percution
+percussion003;Cymbales frappées;Cymbales
+percussion004;Castagnettes;Percution
+piano001;Piano classique;Piano
+piano002;Piano droit;Piano
+piano003;Piano pédale;Piano
+piano004;Piano classique;Piano
+saxophone001;Saxophone contrebasse;Saxophone
+saxophone002;Saxophone soprano;Saxophone
+saxophone003;Saxophone basse;Saxophone
+sono001;Micro;Sono
+sono002;Enceinte;Sono
+sono003;Amplie;Sono

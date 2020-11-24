@@ -1,0 +1,6 @@
+four_id;four_nom;four_ville;four_pays_id;four_adresse;four_codepostal;four_representant;four_tel;four_mail;four_status
+1;Plantage;Paris;FR;1 avenue Cyril Hanouna;75017;Nicolas Dujardin;0102030405;contact@music.fr;Constructeur
+2;Jardi+;Amiens;FR;200 boulevard Eve Angeli;80090;Mike Anic;0708091011;musicplus@gmail.com;Importateur
+3;Attila;Marseille;FR;31 rue Nabilla Benattia;13000;Elle Ephant;0213141516;attila.percu@laposte.net;Constructeur
+4;Barbeuc;Narbonne;FR;56 avenue Donald Trump;11000;Gérard Menfaim;0512345678;sales@guitare.com;Importateur
+5;FOURNIRIEN;Shangaï;CN;112 rue de Pékin;340;Chang Li;0102030405;chang.li@fournirien.cn;Constructeur

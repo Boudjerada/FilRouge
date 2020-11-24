@@ -1,0 +1,31 @@
+Identifiant commande;Référence commande;Identifiant Client;Nom Client;cli_prenom;Total commande prix HT;Total commande prix TTC;Adresse de facturation;Adresse facturation
+1;iuig;10;Boucher;Noë;9224.48;9777.95;865-7652 Nibh. Ave,10,75197,Fermont;865-7652 Nibh. Ave,10,75197,Fermont
+2;idv;6;Lemaire;Enzo;280.98;297.84;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol
+3;icdcg;6;Lemaire;Enzo;478.30;507.00;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol
+4;ecvfg;78;Martinez;Lina;7068.92;7493.06;Ap #466-9700 Pede. Avenue 46174 MY;Ap #466-9700 Pede. Avenue 46174 MY
+5;zfig;98;Dupuis;Carla;430.67;516.80;Ap #874-1931 Iaculis Road 69142 Virginia Plage;Ap #874-1931 Iaculis Road 69142 Virginia Plage
+6;fggfg;50;Blanchard;Adam;3871.32;4645.58;P.O. Box 259, 7958 Sem, St. 82728 Roosbeek;P.. Box 259, 7958 Sem, St. 82728 Roosbeek
+7;fdqc;50;Blanchard;Adam;2237.93;2685.52;P.O. Box 259, 7958 Sem, St. 82728 Roosbeek;P.O. Box 259, 7958 Sem, St. 82728 Roosbeek
+8;fddqc;65;Bailly;Julien;5251.35;6301.62;Ap #182-3848 Nunc St. 82181 Laramie;Ap #182-3848 Nunc St. 82181 Laramie
+9;azaqc;100;Philippe;Maïwenn;8658.00;10389.60;2585 In Street 53983 Lumaco;2585 In Street 53983 Lumaco
+10;fdrqc;1;Riviere;Romain;284.64;341.57;2301 boulevard Alsace-Lorraine 80000 Amiens;2301 boulevard Alsace-Lorraine 80000 Amiens
+11;fvsfc;1;Riviere;Romain;2783.61;3340.33;2301 boulevard Alsace-Lorraine 80000 Amiens;2301 boulevard Alsace-Lorraine 80000 Amiens
+12;fdvvec;2;Bailly;Lilou;3150.65;3339.69;Ap #125-483 Fusce Street 80300 Birmingham;Ap #125-483 Fusce Street 80300 Birmingham
+13;czcze;5;Andre;Maëlle;13435.61;16122.73;Ap #449-9035 Ac Street 59133 Vieux-Genappe;Ap #449-9035 Ac Street 59133 Vieux-Genappe
+14;rggtc;19;Lefebvre;Zoé;1645.30;1974.36;677-3832 Dis St. 94571 Caruaru;677-3832 Dis St. 94571 Caruaru
+15;ffrc;14;Lopez;Marion;1431.70;1517.60;292 Ligula. Road 47589 Kota;292 Ligula. Road 47589 Kota
+16;fdveavc;14;Lopez;Marion;107.84;114.31;292 Ligula. Road 47589 Kota;292 Ligula. Road 47589 Kota
+17;fggavc;9;Riviere;Alice;533.64;565.66;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown
+18;azsdc;4;Lefebvre;Élisa;576.45;611.04;Ap #850-6013 Suscipit, Av. 62000 Arras;Ap #850-6013 Suscipit, Av. 62000 Arras
+19;djdhf;26;Poirier;Paul;1921.28;2036.56;Ap #784-932 Quis Rd. 42399 Flushing;Ap #784-932 Quis Rd. 42399 Flushing
+20;ljojjk;26;Poirier;Paul;1995.51;2115.24;Ap #784-932 Quis Rd. 42399 Flushing;Ap #784-932 Quis Rd. 42399 Flushing
+21;fgege;44;Dupont;Chaïma;1589.28;1684.64;P.O. Box 576, 4207 Sociis Av. 78616 Romeral;P.O. Box 576, 4207 Sociis Av. 78616 Romeral
+22;fbgddr;33;Henry;Florentin;2370.70;2512.94;4750 Molestie Rd. 91323 Heusden-Zolder;4750 Molestie Rd. 91323 Heusden-Zolder
+23;gethhry;33;Henry;Florentin;286.08;303.24;4750 Molestie Rd. 91323 Heusden-Zolder;4750 Molestie Rd. 91323 Heusden-Zolder
+24;fefrrv;9;Riviere;Alice;1844.11;1954.76;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown
+25;fczefv;9;Riviere;Alice;409.15;433.70;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown
+26;thyuju;91;Bon;Jean;2393.20;2536.79;30 rue de poulainville 80080 Amiens;30 rue de poulainville 80080 Amiens
+27;ergzthy;66;Chevalier;Gaspard;2346.30;2487.08;8464 Blandit Rd. 03869 Glain;8464 Blandit Rd. 03869 Glain
+28;iklu;37;Blanc;Sarah;5529.60;5861.38;P.O. Box 535, 8956 Ut, Avenue 61210 Joliet;P.O. Box 535, 8956 Ut, Avenue 61210 Joliet
+29;fzfrgag;99;Meunier;Angelina;289.50;306.87;Ap #784-906 Amet, Ave 46591 Melle;Ap #784-906 Amet, Ave 46591 Melle
+30;ikiuk;97;Robert;Maelys;2057.58;2469.10;Ap #874-1931 Iaculis Road 69142 Virginia Plage;Ap #874-1931 Iaculis Road 69142 Virginia Plage

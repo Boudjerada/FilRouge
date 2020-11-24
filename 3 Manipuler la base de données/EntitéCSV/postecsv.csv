@@ -1,0 +1,32 @@
+pos_id;pos_libelle
+1;Président-Directeur Général
+2;Manager(/geuse)
+3;Commercial(e)
+4;Responsable des ventes
+6;Assistant(e) commercial(e)
+7;Acheteur(/teuse)
+8;Assistant(e) RH
+9;Directeur(/trice) financier
+10;Directeur(/trice) des Ressources Humaines
+11;Chef(fe) de rayon
+12;Vendeur/(euse)
+13;Hôte(/esse) de caisse
+14;Pépiniériste
+17;Directeur(/trice) de magasin
+18;Directeur(/trice) du marketing
+19;Assistant(e) marketing
+20;Comptable
+21;Assistant(e) comptable
+22;Vigile
+24;Préparateur(/trice) de commandes
+25;Formateur(/trice)
+26;Directeur(/trice) des systèmes d information
+27;Développeur(/peuse)
+28;Chef(/fe) de projet informatique
+29;Community manager
+30;Graphiste
+31;Technicien(/ne) réseau
+32;Technicien(/ne) support informatique
+33;Electricien(/ne)
+34;Technicien(/ne) de maintenance
+35;Directeur(/trice) commercial

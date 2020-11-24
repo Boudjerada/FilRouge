@@ -1,0 +1,31 @@
+com_id;com_d_com;com_d_paiment;com_reduc;com_ref;com_etat;com_adress_livraison;com_adress_factu;com_cli_id
+1;2020-01-24 12:00:27;2020-02-12 14:00:27;3.05;iuig;1;865-7652 Nibh. Ave,10,75197,Fermont;865-7652 Nibh. Ave,10,75197,Fermont;10
+2;2019-06-24 17:09:33;2019-06-28 18:09:33;4.00;idv;1;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol;6
+3;2020-02-24 12:00:27;2020-03-05 14:00:27;2.00;icdcg;1;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol;P.O. Box 771, 895 Libero Avenue 31779 Sevastopol;6
+4;2020-05-24 09:07:41;2020-05-31 10:07:11;1.09;ecvfg;1;Ap #466-9700 Pede. Avenue 46174 MY;Ap #466-9700 Pede. Avenue 46174 MY;78
+5;2020-05-06 03:59:39;2020-05-06 03:59:39;1.00;zfig;1;Ap #874-1931 Iaculis Road 69142 Virginia Plage;Ap #874-1931 Iaculis Road 69142 Virginia Plage;98
+6;2019-08-13 16:41:09;2019-08-13 16:41:09;2.00;fggfg;1;P.. Box 259, 7958 Sem, St. 82728 Roosbeek;P.O. Box 259, 7958 Sem, St. 82728 Roosbeek;50
+7;2020-11-18 18:41:09;2020-11-18 18:41:09;2.00;fdqc;0;P.O. Box 259, 7958 Sem, St. 82728 Roosbeek;P.O. Box 259, 7958 Sem, St. 82728 Roosbeek;50
+8;2019-05-01 14:27:23;2019-05-01 14:27:23;6.10;fddqc;1;Ap #182-3848 Nunc St. 82181 Laramie;Ap #182-3848 Nunc St. 82181 Laramie;65
+9;2020-11-18 15:57:34;2020-11-18 15:57:34;2.00;azaqc;0;2585 In Street 53983 Lumaco;2585 In Street 53983 Lumaco;100
+10;2019-04-02 23:47:20;2019-04-02 23:47:20;4.00;fdrqc;1;2301 boulevard Alsace-Lorraine 80000 Amiens;2301 boulevard Alsace-Lorraine 80000 Amiens;1
+11;2020-05-06 00:01:53;2020-05-06 00:01:53;6.00;fvsfc;1;2301 boulevard Alsace-Lorraine 80000 Amiens;2301 boulevard Alsace-Lorraine 80000 Amiens;1
+12;2019-12-14 06:52:52;2019-12-21 08:00:10;2.50;fdvvec;1;Ap #125-483 Fusce Street 80300 Birmingham;Ap #125-483 Fusce Street 80300 Birmingham;2
+13;2019-06-24 17:09:33;2019-06-24 17:09:33;3.50;czcze;1;Ap #449-9035 Ac Street 59133 Vieux-Genappe;Ap #449-9035 Ac Street 59133 Vieux-Genappe;5
+14;2019-05-17 18:12:34;2019-05-27 10:12:30;0.87;rggtc;1;677-3832 Dis St. 94571 Caruaru;677-3832 Dis St. 94571 Caruaru;19
+15;2020-01-09 19:02:05;2020-01-12 19:02:05;0.00;ffrc;1;292 Ligula. Road 47589 Kota;292 Ligula. Road 47589 Kota;14
+16;2020-03-09 19:02:05;2020-03-14 19:02:05;0.50;fdveavc;1;292 Ligula. Road 47589 Kota;292 Ligula. Road 47589 Kota;14
+17;2020-06-26 23:05:17;2020-06-29 11:05:17;1.50;fggavc;1;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;9
+18;2019-05-11 02:58:51;2019-05-15 02:00:50;2.50;azsdc;1;Ap #850-6013 Suscipit, Av. 62000 Arras;Ap #850-6013 Suscipit, Av. 62000 Arras;4
+19;2019-05-09 06:32:53;2020-03-18 18:02:05;1.50;djdhf;1;Ap #784-932 Quis Rd. 42399 Flushing;Ap #784-932 Quis Rd. 42399 Flushing;26
+20;2020-05-10 06:32:53;2020-05-14 09:02:10;2.50;ljojjk;1;Ap #784-932 Quis Rd. 42399 Flushing;Ap #784-932 Quis Rd. 42399 Flushing;26
+21;2019-08-26 02:39:06;2019-09-05 01:00:06;6.50;fgege;1;P.O. Box 576, 4207 Sociis Av. 78616 Romeral;P.O. Box 576, 4207 Sociis Av. 78616 Romeral;44
+22;2019-07-04 00:37:24;2019-07-10 09:37:24;0.50;fbgddr;1;4750 Molestie Rd. 91323 Heusden-Zolder;4750 Molestie Rd. 91323 Heusden-Zolder;33
+23;2020-04-04 10:37:24;2020-04-09 12:40:24;2.30;gethhry;1;4750 Molestie Rd. 91323 Heusden-Zolder;4750 Molestie Rd. 91323 Heusden-Zolder;33
+24;2020-06-26 23:05:17;2020-06-29 12:05:17;5.50;fefrrv;1;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;9
+25;2020-08-26 23:05:17;2020-08-30 23:05:17;5.50;fczefv;1;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;P.O. Box 743, 4502 Dictum St. 64066 Campbelltown;9
+26;2020-06-01 00:00:00;2020-06-11 11:05:00;0.50;thyuju;1;30 rue de poulainville 80080 Amiens;30 rue de poulainville 80080 Amiens;91
+27;2020-04-06 14:32:34;2020-04-10 14:00:00;1.50;ergzthy;1;8464 Blandit Rd. 03869 Glain;8464 Blandit Rd. 03869 Glain;66
+28;2019-06-27 03:01:40;2019-06-30 16:09:49;5.50;iklu;1;P.O. Box 535, 8956 Ut, Avenue 61210 Joliet;P.O. Box 535, 8956 Ut, Avenue 61210 Joliet;37
+29;2019-10-20 11:20:59;2019-10-28 10:23:59;0.30;fzfrgag;1;Ap #784-906 Amet, Ave 46591 Melle;Ap #784-906 Amet, Ave 46591 Melle;99
+30;2019-10-29 11:53:49;2019-10-29 11:53:49;0.90;ikiuk;1;Ap #874-1931 Iaculis Road 69142 Virginia Plage;Ap #874-1931 Iaculis Road 69142 Virginia Plage;97

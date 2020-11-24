@@ -191,7 +191,7 @@ DROP TABLE IF EXISTS `commande`;
 CREATE TABLE IF NOT EXISTS `commande`(
    `com_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
    `com_d_com` DATETIME NOT NULL,
-   `com_d_paiment` DATETIME DEFAULT NULL,
+   `com_d_paiement` DATETIME DEFAULT NULL,
    `com_reduc` DECIMAL(3,2) DEFAULT 0,
    `com_ref` VARCHAR(10) NOT NULL,
    `com_etat` char(1) NOT NULL,
@@ -201,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `commande`(
    PRIMARY KEY(`com_id`),
    UNIQUE KEY `idx_com_ref` (`com_ref`),
    FOREIGN KEY(`com_cli_id`) REFERENCES `client`(`cli_id`)
-);
+)AUTO_INCREMENT=31;
 
 -- --------------------------------------------------------
 
@@ -223,6 +223,6 @@ CREATE TABLE IF NOT EXISTS `details_com`(
    PRIMARY KEY(`detcom_id`),
    FOREIGN KEY(`detcom_com_id`) REFERENCES `commande`(`com_id`),
    FOREIGN KEY(`detcom_pro_id`) REFERENCES `produits`(`pro_id`)
-);
+)AUTO_INCREMENT=40;
 
 
