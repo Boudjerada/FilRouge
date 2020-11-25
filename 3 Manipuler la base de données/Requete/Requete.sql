@@ -67,7 +67,83 @@ from `client`
 order by `cli_nom`,`cli_prenom` ;
 
 
-/*Requetes de suppression : Les commandes et les documents associés sont conservés pendant trois ans.*/
+/*Requetes 10 et 11, de suppression : Les commandes et les documents associés sont conservés pendant trois ans.
+ Chaque 31 décembre, la suppression des commandes et de leurs détails intervient
+ Pour le respect de l'intégrité de la base, il sera supprimé le détails avant la commande
+ Ces requetes sont testées sachant que mon magasin a ouvert en Avril 2019, aucune commande n'est affectées */
 
-delete 
+delete from `details_com` where `detcom_com_id` in (select `com_id` from `commande` where year(now()) > year(`com_d_com`) + 2);
+delete from `commande` where year(now()) > year(`com_d_com`) + 2;
+
+/*Requete 12 chiffre d'affaires hors taxes généré  par fournisseur*/
+
+
+select `four_nom` as 'Nom fournisseur', round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2) as 'Chiffre d affaire'
+from `fournisseur`
+join `produits` on `pro_four_id` = `four_id`
+join `details_com` on `detcom_pro_id` = `pro_id`
+join `commande` on `com_id` = `detcom_com_id`
+join `client` on `cli_id` = `com_cli_id`
+group by `four_id`;
+
+/*Requete 13 chiffre d'affaires hors taxes généré pour l'ensemble des fournisseurs */ 
+
+select  round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2) as 'Chiffre d affaire total'
+from `produits`
+join `details_com` on `detcom_pro_id` = `pro_id`
+join `commande` on `com_id` = `detcom_com_id`
+join `client` on `cli_id` = `com_cli_id`;
+
+/*Requete 14 : liste des produits commandés pour une année sélectionnée (référence et nom du produit, quantité commandée, fournisseur) */
+/*Ici 2019*/
+
+select `pro_ref` as 'Référence produit', `pro_libelle` as 'Nom Produit',  sum(`detcom_qte`) as 'quantité commandé',`four_nom` as 'Nom fournisseur'
+from `fournisseur`
+join `produits` on `pro_four_id` = `four_id`
+join `details_com` on `detcom_pro_id` = `pro_id`
+join `commande` on `com_id` = `detcom_com_id`
+where year(`com_d_com`) = 2019
+group by `four_id`, `pro_ref`;
+
+/*Requete 15 :liste des commandes pour un client (date de commande, référence client, montant, état de la commande)*/
+/*Ici le client id50 référencé par "gjdhthh"*/
+
+select `com_d_com` as 'Date commande', `cli_ref` as 'Référence client', round((round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2)) + (( (round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2)) * `detcom_tva`) / 100),2) as 'Montant TTC', `com_etat` as 'Livré ou Non'
+from `client`
+join `commande` on `com_cli_id` = `cli_id`
+join `details_com` on `com_id` = `detcom_com_id`
+join `produits` on `detcom_pro_id` = `pro_id`
+where `cli_ref` = "gjdhthh"
+group by `com_id`;
+
+
+/*Requete 16 :liste des commandes pour un client (date de commande, référence client, montant, état de la commande)*/
+/*Ici pour tout les clients*/
+
+select `com_d_com` as 'Date commande', `cli_ref` as 'Référence client', `cli_nom` as 'Nom client', round((round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2)) + (( (round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2)) * `detcom_tva`) / 100),2) as 'Montant TTC', `com_etat` as 'Livré ou Non'
+from `client`
+join `commande` on `com_cli_id` = `cli_id`
+join `details_com` on `com_id` = `detcom_com_id`
+join `produits` on `detcom_pro_id` = `pro_id`
+group by `com_id`
+order by `cli_nom`;
+
+/* Requete 17 : répartition du chiffre d'affaires hors taxes par type de client*/
+
+select `cli_cat` as 'Catégorie', round(sum(`detcom_qte` * (`pro_prix` - ((`pro_prix` * (`cli_coef` + `com_reduc`)) / 100) )),2)  as 'Chiffre d affaire HT'
+from `client`
+join `commande` on `com_cli_id` = `cli_id`
+join `details_com` on `com_id` = `detcom_com_id`
+join `produits` on `detcom_pro_id` = `pro_id`
+group by `cli_cat`; 
+
+
+/* Requete 18 : lister les commandes en cours de livraison */
+
+select `com_id` as 'Identifiant commande', `com_ref` as 'Référence commande en cours de livraison', `com_d_com` as 'Date commande'
+from `commande`
+join `details_com` on `com_id` = `detcom_com_id`
+where `detcom_d_liv` is NULL
+group by `com_id`
+order by `com_ref`;
 
