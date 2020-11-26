@@ -140,10 +140,10 @@ group by `cli_cat`;
 
 /* Requete 18 : lister les commandes en cours de livraison */
 
-select `com_id` as 'Identifiant commande', `com_ref` as 'Référence commande en cours de livraison', `com_d_com` as 'Date commande'
+select distinct(`com_id`) as 'Identifiant commande', `com_ref` as 'Référence commande en cours de livraison', `com_d_com` as 'Date commande'
 from `commande`
 join `details_com` on `com_id` = `detcom_com_id`
-where `detcom_d_liv` is NULL
+where `detcom_d_liv` is NULL and `detcom_d_exp` is not null
 group by `com_id`
 order by `com_ref`;
 
