@@ -163,7 +163,7 @@ CREATE USER if not exists 'admi4'@'%' IDENTIFIED BY 'admi4';
 CREATE USER if not exists 'admi5'@'%' IDENTIFIED BY 'admi5';
 
 
-/*Affectation du rôle gestion aux 5 administrateurs*/
+/*Affectation du rôle administrateur aux 5 administrateurs*/
 
 GRANT 'administrateur'@'%'
 TO 'Fode'@'%', 'Herve'@'%','admi3'@'%','admi4'@'%','admi5'@'%';  

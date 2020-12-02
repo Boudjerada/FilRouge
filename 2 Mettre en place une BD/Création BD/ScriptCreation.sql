@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `pays` (
   `pays_id` char(2) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `pays_nom` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`pays_id`)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -48,10 +48,10 @@ CREATE TABLE IF NOT EXISTS `pays` (
 
 DROP TABLE IF EXISTS `poste`;
 CREATE TABLE `poste`(
-   `pos_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+   `pos_id` int(10) NOT NULL AUTO_INCREMENT,
    `pos_libelle` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
    PRIMARY KEY(`pos_id`)
-)AUTO_INCREMENT=36;
+)ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -61,12 +61,12 @@ CREATE TABLE `poste`(
 
 DROP TABLE IF EXISTS `categorie`;
 CREATE TABLE IF NOT EXISTS `categorie` (
-  `cat_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `cat_id` int(10)  NOT NULL AUTO_INCREMENT,
   `cat_nom` varchar(50) NOT NULL,
-  `cat_parent_id` int(10) UNSIGNED DEFAULT NULL,
+  `cat_parent_id` int(10)  DEFAULT NULL,
   PRIMARY KEY (`cat_id`),
   FOREIGN KEY (`cat_parent_id`) REFERENCES `categorie` (`cat_id`)
-)AUTO_INCREMENT= 41;
+)ENGINE=InnoDB AUTO_INCREMENT= 41 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -77,8 +77,8 @@ CREATE TABLE IF NOT EXISTS `categorie` (
 
 DROP TABLE IF EXISTS `employe`;
 CREATE TABLE IF NOT EXISTS `employe`(
-   `emp_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
-   `emp_sup_id` Int(10) UNSIGNED DEFAULT NULL,
+   `emp_id` int(10)  NOT NULL AUTO_INCREMENT,
+   `emp_sup_id` Int(10),
    `emp_pos_id` INT(10) NOT NULL,
    `emp_nom` VARCHAR(50) NOT NULL,
    `emp_prenom` VARCHAR(50) NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `employe`(
    PRIMARY KEY(`emp_id`),
    FOREIGN KEY(`emp_sup_id`) REFERENCES `employe`(`emp_id`),
    FOREIGN KEY(`emp_pos_id`) REFERENCES `poste`(`pos_id`)
-)AUTO_INCREMENT=108;
+)ENGINE=InnoDB AUTO_INCREMENT=108 DEFAULT CHARSET=utf8;
 
 
 -- --------------------------------------------------------
@@ -106,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `employe`(
 
 DROP TABLE IF EXISTS `fournisseur`;
 CREATE TABLE IF NOT EXISTS `fournisseur`(
-   `four_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+   `four_id` int(10)  NOT NULL AUTO_INCREMENT,
    `four_nom` VARCHAR(50) NOT NULL,
    `four_ville` VARCHAR(50) NOT NULL,
    `four_pays_id` CHAR(2) NOT NULL,
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `fournisseur`(
    `four_status` VARCHAR(15) NOT NULL,
    PRIMARY KEY(`four_id`),
    FOREIGN KEY(`four_pays_id`) REFERENCES `pays`(`pays_id`)
-)AUTO_INCREMENT=6;
+)ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -129,7 +129,7 @@ CREATE TABLE IF NOT EXISTS `fournisseur`(
 
 DROP TABLE IF EXISTS `produits`;
 CREATE TABLE IF NOT EXISTS `produits`(
-   `pro_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+   `pro_id` int(10)  NOT NULL AUTO_INCREMENT,
    `pro_cat_id` INT(10) NOT NULL,
    `pro_prix` DECIMAL(7,2) NOT NULL,
    `pro_ref` VARCHAR(30) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -147,7 +147,7 @@ CREATE TABLE IF NOT EXISTS `produits`(
    FOREIGN KEY(`pro_cat_id`) REFERENCES `categorie`(`cat_id`),
    FOREIGN KEY(`pro_four_id`) REFERENCES `fournisseur`(`four_id`),
    FOREIGN KEY(`pro_emp_id`) REFERENCES `employe`(`emp_id`)
-)AUTO_INCREMENT=31;
+)ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `produits`(
 
 DROP TABLE IF EXISTS `client`;
 CREATE TABLE IF NOT EXISTS `client`(
-    `cli_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+    `cli_id` int(10)  NOT NULL AUTO_INCREMENT,
     `cli_nom` VARCHAR(50) NOT NULL,
     `cli_prenom` VARCHAR(30) DEFAULT NULL,
     `cli_adresse` VARCHAR(150) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -178,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `client`(
     UNIQUE KEY `idx_cli_ref` (`cli_ref`),
     FOREIGN KEY(`cli_pays_id`) REFERENCES `pays`(`pays_id`),
     FOREIGN KEY(`cli_emp_id`) REFERENCES `employe`(`emp_id`)
-)AUTO_INCREMENT=101;
+)ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `client`(
 
 DROP TABLE IF EXISTS `commande`;
 CREATE TABLE IF NOT EXISTS `commande`(
-   `com_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+   `com_id` int(10) NOT NULL AUTO_INCREMENT,
    `com_d_com` DATETIME NOT NULL,
    `com_d_paiement` DATETIME DEFAULT NULL,
    `com_reduc` DECIMAL(3,2) DEFAULT 0,
@@ -201,7 +201,7 @@ CREATE TABLE IF NOT EXISTS `commande`(
    PRIMARY KEY(`com_id`),
    UNIQUE KEY `idx_com_ref` (`com_ref`),
    FOREIGN KEY(`com_cli_id`) REFERENCES `client`(`cli_id`)
-)AUTO_INCREMENT=31;
+)ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -212,17 +212,17 @@ CREATE TABLE IF NOT EXISTS `commande`(
 
 DROP TABLE IF EXISTS `details_com`;
 CREATE TABLE IF NOT EXISTS `details_com`(
-   `detcom_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+   `detcom_id` int(10)  NOT NULL AUTO_INCREMENT,
    `detcom_qte` int(10) UNSIGNED NOT NULL,
    `detcom_tva` DECIMAL(4,2) NOT NULL,
    `detcom_d_exp` Date DEFAULT NULL,
    `detcom_d_liv` Date DEFAULT NULL,
    `detcom_adresse` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci not NULL, 
-   `detcom_com_id` int(10) UNSIGNED NOT NULL,
-   `detcom_pro_id` int(10) UNSIGNED NOT NULL,
+   `detcom_com_id` int(10)  NOT NULL,
+   `detcom_pro_id` int(10)  NOT NULL,
    PRIMARY KEY(`detcom_id`),
    FOREIGN KEY(`detcom_com_id`) REFERENCES `commande`(`com_id`),
    FOREIGN KEY(`detcom_pro_id`) REFERENCES `produits`(`pro_id`)
-)AUTO_INCREMENT=40;
+)ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
 
 

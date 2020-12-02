@@ -8,9 +8,9 @@ SELECT * FROM `produits` join `fournisseur` on `four_id`=`pro_four_id`;
 
 
 /*Affichage des vues de la base village_green */
-
+/*
 SELECT * 
 FROM information_schema.views
 WHERE table_schema = 'village_green'; 
-
+*/
 
