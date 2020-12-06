@@ -215,9 +215,6 @@ CREATE TABLE IF NOT EXISTS `details_com`(
    `detcom_id` int(10)  NOT NULL AUTO_INCREMENT,
    `detcom_qte` int(10) UNSIGNED NOT NULL,
    `detcom_tva` DECIMAL(4,2) NOT NULL,
-   `detcom_d_exp` Date DEFAULT NULL,
-   `detcom_d_liv` Date DEFAULT NULL,
-   `detcom_adresse` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci not NULL, 
    `detcom_com_id` int(10)  NOT NULL,
    `detcom_pro_id` int(10)  NOT NULL,
    PRIMARY KEY(`detcom_id`),
@@ -226,3 +223,21 @@ CREATE TABLE IF NOT EXISTS `details_com`(
 )ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
 
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `livraison`
+--
+
+
+DROP TABLE IF EXISTS `livraison`;
+CREATE TABLE IF NOT EXISTS `livraison`(
+   `liv_id` int(10) NOT NULL AUTO_INCREMENT,
+   `liv_detcom_id` int(10) NOT NULL,
+   `liv_qte` int(10) UNSIGNED NOT NULL,
+   `liv_d_exp` Date NOT NULL,
+   `liv_d_liv` Date DEFAULT NULL,
+   `liv_adresse` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci not NULL, 
+   PRIMARY KEY(`liv_id`),
+   FOREIGN KEY(`liv_detcom_id`) REFERENCES `details_com`(`detcom_id`)
+)ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;

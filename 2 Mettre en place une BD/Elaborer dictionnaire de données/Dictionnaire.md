@@ -80,8 +80,7 @@ DETAILS COMMANDE
 Identifiant (Entier)
 Quantité  (Entier)
 taux TVA  (Entier)
-Expédie (DATE)
-livré (Date)
+
 
 PAYS
 
@@ -100,3 +99,4 @@ Identifiant Livraison(Entier)
 Adresse (Chaine caractère)
 Quantité du produit livré (Entier)
 Date d'expedition(Date)
+Date livraison(Date)

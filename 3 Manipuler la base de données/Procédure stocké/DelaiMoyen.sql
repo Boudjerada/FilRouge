@@ -6,7 +6,7 @@ DELIMITER |
 
 CREATE PROCEDURE DelaiMoyen()
 BEGIN
-    select round(avg(datediff(com_d_paiement,com_d_com)),1) as 'Nombre de jours du délai moyen entre la date de commande et la date de facturation' from commande where com_d_paiement is not null;
+    select round(avg(datediff(`com_d_paiement`,`com_d_com`)),1) as 'Nombre de jours du délai moyen entre la date de commande et la date de facturation' from `commande` where `com_d_paiement` is not null;
 END |
 
 DELIMITER ;

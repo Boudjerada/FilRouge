@@ -1,3 +1,4 @@
-Identifiant commande;Référence commande en cours de livraison;Date commande
-9;azaqc;2020-11-18 15:57:34
-7;fdqc;2020-11-18 18:41:09
+Date commande;Date paiement;Prix unitaire produit;Remise Client;Remise Commande;Qauntité commandé;Réference produit;Libelle produit;Prix HT;TVA;Prix TTC;Montant TTC facture
+2019-12-14 06:52:52;2019-12-21 08:00:10;2100.00;2.34;2.50;1;batterie003;batterie H062;1998.36;6.00;2118.26;3339.69
+2019-12-14 06:52:52;2019-12-21 08:00:10;110.90;2.34;2.50;1;sono001;Attila;105.53;6.00;111.86;3339.69
+2019-12-14 06:52:52;2019-12-21 08:00:10;1100.00;2.34;2.50;1;bass003;Crotoy;1046.76;6.00;1109.57;3339.69

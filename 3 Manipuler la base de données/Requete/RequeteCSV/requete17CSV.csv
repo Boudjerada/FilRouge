@@ -1,3 +1,4 @@
-Catégorie;Chiffre d affaire HT
-Prof;45472.97
-Part;39010.72
+Réference client;Nom client;Prénom client;Référence commande;Date commande;Référence produit;Libelle produit;Prix produit;Quantité commandé;Quantité livré;adresse livraison;Date expédition;Date livraison;Prix livraison HT;Prix Livraison TTC
+hdcdvsg;Bailly;Lilou;fdvvec;2019-12-14 06:52:52;batterie003;batterie H062;2100.00;1;1;Ap #125-483 Fusce Street 80300 Birmingham;2019-12-16;2019-12-23;1998.36;2118.26
+hdcdvsg;Bailly;Lilou;fdvvec;2019-12-14 06:52:52;sono001;Attila;110.90;1;1;Ap #125-483 Fusce Street 80300 Birmingham;2019-12-16;2019-12-23;105.53;111.86
+hdcdvsg;Bailly;Lilou;fdvvec;2019-12-14 06:52:52;bass003;Crotoy;1100.00;1;1;Ap #125-483 Fusce Street 80300 Birmingham;2019-12-16;2019-12-23;1046.76;1109.57
